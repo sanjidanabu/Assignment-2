@@ -9,10 +9,11 @@
 }
 body{
  background-color: rgba(26, 11, 46, 1);
+ 
 }
 /* navbar design */
 .navbar{
-  /* max-width: 1200px; */
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -182,7 +183,7 @@ transition: transform 3s ;
 }
 /* podcast design */
 .podcast-section{
-  width: 90%;
+  width: 100%;
  /* max-width: 1200px ;  */
   margin: 0 auto;
   text-align: center;
@@ -216,9 +217,67 @@ font-size: 1rem;
 font-weight: 400;
 
 }
+/* teachwave choose section  */
+.choose-section{
+  background: rgba(35, 14, 61, 1);
+  margin: 0 auto;
+  text-align: center;
+  padding: 120px 200px;
+}
+.choose-container>h3{
+  color:  rgba(255, 255, 255, 1);
+font-size: 3rem;
+font-weight: 700;
+}
+.card-container{
+  margin-top: 40px;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
 
+ gap: 30px;
+ 
 
+}
+.cardd{
 
+gap: 16;
+padding: 40px;
+border-radius: 40px;
+background: rgba(53, 17, 101, 0.4);
+padding: 40px;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+justify-content: center;
+align-items: center;
+ }
+ .headpn{
+  grid-row: span 2;
+ }
+  .device{
+  grid-column: span 2;
+ }
+ .location {
+  grid-column: span 2;
+ }
+ .zap{
+  grid-column: span 2;
+ }
+
+.cardd h4{
+  margin-top: 16px;
+  color: rgba(255, 255, 255, 1);
+font-size: 1.5rem;
+font-weight: 700;
+}
+.cardd p{
+  color:  rgba(255, 255, 255, 0.555);
+font-size: 1rem;
+font-weight: 400;
+margin-top: 16px;
+}
 
 
 
@@ -233,6 +292,11 @@ font-weight: 400;
 
 /* responsive design */
 @media  screen and (max-width:576px) {
+  html, body{
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+  }
   .menu-section{
     display: none;
   }
@@ -282,4 +346,27 @@ font-weight: 400;
   width: 100%;
   margin-bottom: 20px;
 }
+
+.choose-section {
+ padding: 60px 15px ; 
+margin: 0 ;
+width: 100%;
+overflow-x: hidden; 
+    }
+
+    
+    .choose-container > h3 {
+        font-size: 1.8rem ;
+        margin-bottom: 20px;
+    }
+
+    
+    .card-container {
+        grid-template-columns: 1fr;  
+        gap: 20px; 
+        margin-top: 20px;
+        width: 100%;
+    }
+
+ 
 }
