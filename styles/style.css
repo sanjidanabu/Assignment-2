@@ -78,6 +78,105 @@ cursor: pointer;
   /* width: 150px; */
   
 }
+/* banner design */
+.banner-section{
+ background-image: url("../assets/hero-bg.png");
+ min-height: 100vh;
+ 
+}
+ .mic-img{
+  position: relative;
+  width: 350px;
+  height: 350px;
+  margin: 0 auto;
+  top: 100px;
+  margin-bottom: 40px;
+  transition: transform 3s;
+
+}
+.mic-img:hover{
+  transform: rotate(45deg);
+}
+.circle{
+  width: 100%;
+  display: block;
+}
+.micro{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+.badge{
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  border-radius: 1000px;
+box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+background:  rgba(0, 255, 136, 1);
+width: 75px;
+height: 38px;
+/* color: black; */
+font-size: 1.15rem;
+padding: 8px 16px;
+color: #000;
+font-weight: 700;
+z-index: 10;
+transform: transform 3s;
+
+}
+.badge:hover{
+  transform: rotate(30deg);
+  cursor: pointer;
+}
+.banner-h{
+  text-align: center;
+  margin-top: 121px;
+}
+.banner-h>h3{
+  color: rgba(255, 255, 255, 1);
+font-size: 3.7rem;
+font-weight: 800;
+}
+.banner-h>p{
+color: rgba(255, 255, 255, 1);
+font-size: 1rem;
+font-weight: 400;
+margin-bottom: 24px;
+
+}
+ .btn-1{
+  border-radius: 10000px;
+background:  linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
+padding: 12px 20px;
+color: white;
+font-size: 1rem;
+font-weight: 600;
+transition: transform 3s;
+}
+.btn-1:hover{
+  transform: rotate(30deg);
+  cursor: pointer;
+}
+
+.btn-2{
+  box-sizing: border-box;
+border: 1px solid  rgba(0, 255, 136, 1);
+border-radius: 10000px;
+padding: 12px 20px;
+background: transparent;
+color: rgba(0, 255, 136, 1);
+transition: transform 3s ;
+}
+
+.btn-2:hover{
+  transform: rotate(30deg);
+  cursor: pointer;
+}
+
+
+
 
 
 
@@ -110,4 +209,11 @@ cursor: pointer;
   font-size: 24px;
   display: inline;
 }
+.banner-section{
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 }
