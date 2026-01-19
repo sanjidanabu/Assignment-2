@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body{
+  background-color: rgba(65, 37, 103, 1);
+}
+/* navbar design */
+.navbar{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.navbar>span{
+  margin-right: 5px;
+  color: antiquewhite;
+  margin-top: 25px;
+  font-size: 24px;
+  display: none;
+}
+.menu-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  
+}
+.menu-section p{
+  font-size: 1rem;
+  color:  rgba(255, 255, 255, 1);
+
+
+}
+.heading{
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 20px;
+  
+}
+
+.heading .h-1{
+  color: rgba(255, 255, 255, 1);
+}
+
+.heading .h-2{
+ 
+
+background:  linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+}
+
+.btn{
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 13px 16px;
+  color:  rgba(255, 255, 255, 1);
+  border-radius: 10000px;
+background:  linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
+transition: transform 3s;
+
+}
+
+.btn:hover{
+transform: rotate(30deg);
+cursor: pointer;
+  /* width: 150px; */
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive design */
+@media  screen and (max-width:576px) {
+  .menu-section{
+    display: none;
+  }
+  .btn-container{
+    display: none;
+  }
+  .navbar{
+  margin-left: 5px;
+  }
+  .navbar>span{
+  margin-right: 5px;
+  color: antiquewhite;
+  margin-top: 25px;
+  font-size: 24px;
+  display: inline;
+}
+}
